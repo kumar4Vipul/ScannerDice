@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.abc.ScarnesDice.MainActivity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/playerscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:padding="3dp"
+        android:text="Player score:0"/>
+
+    <TextView
+        android:id="@+id/playerTurnscore"
+        android:layout_below="@+id/playerscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:padding="3dp"
+        android:text="Player Trun score:0"/>
+    <TextView
+        android:id="@+id/Computerscore"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:padding="3dp"
+        android:text="Player2 score:0"/>
+    <TextView
+      android:id="@+id/ComputerTurnscore"
+      android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+      android:layout_height="wrap_content"
+        android:layout_below="@id/Computerscore"
+      android:textSize="15dp"
+      android:padding="3dp"
+      android:text="player2 Turn score:0"/>
+
+</RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/ImageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice6"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+    <Button
+        android:id="@+id/ROLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROLL"
+        />
+    <Button
+        android:id="@+id/HOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOLD"
+        />
+
+        <Button
+            android:id="@+id/ROLL2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROLL2"
+            />
+        <Button
+            android:id="@+id/HOLD2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOLD2"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/RESET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        />
+</LinearLayout>
